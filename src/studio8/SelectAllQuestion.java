@@ -2,14 +2,21 @@ package studio8;
 
 public class SelectAllQuestion extends MultipleChoiceQuestion {
 
+	private String[] options;
+	
 	public SelectAllQuestion(String prompt, String answer, String[] choices) {
+		super (prompt, answer, 1, choices);
+		this.options=choices;
 		//Hint: 1 point per choice
 		//FIXME
 	}
 	
 	public int checkAnswer(String givenAnswer) {
-		//FIXME Should return partial credit (if earned)!
-		return 0;
+		int totalPoints = 0;
+		String answer = new String();
+		answer.toCharArray();
+		for (int i=0; i< options.length; i++) {
+			if(this.options[i]<
 	}
 	
 	public static void main(String[] args) {
